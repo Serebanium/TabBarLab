@@ -14,7 +14,7 @@
         <!--Я-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TabBarLab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController1" customModule="TabBarLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,6 +57,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Я" image="Image-1" selectedImage="Image-1" id="IIP-sT-P87"/>
+                    <connections>
+                        <outlet property="image1" destination="aqc-M7-xQF" id="H9z-aD-JR1"/>
+                        <segue destination="c3a-tw-E5J" kind="show" identifier="1toFull" id="whj-iY-DRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,7 +69,7 @@
         <!--Город-->
         <scene sceneID="Lcm-TG-fJo">
             <objects>
-                <viewController id="3SN-aD-ySt" sceneMemberID="viewController">
+                <viewController id="3SN-aD-ySt" customClass="ViewController2" customModule="TabBarLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ySv-I5-Scr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,6 +128,12 @@
                         <viewLayoutGuide key="safeArea" id="wgk-OZ-DiV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Город" image="Image-2" selectedImage="Image-2" id="ACW-wE-lzF"/>
+                    <connections>
+                        <outlet property="image1" destination="b8J-T3-eAH" id="LsK-Xf-79R"/>
+                        <outlet property="image2" destination="F4a-ay-JUM" id="pPV-26-Dph"/>
+                        <outlet property="image3" destination="HZv-af-yIf" id="ZbY-1F-KO9"/>
+                        <segue destination="c3a-tw-E5J" kind="show" identifier="2toFull" id="nlo-w1-hLa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5P5-aq-WeY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,7 +142,7 @@
         <!--Животность-->
         <scene sceneID="7cb-vH-7jm">
             <objects>
-                <viewController id="h2U-uj-zCj" sceneMemberID="viewController">
+                <viewController id="h2U-uj-zCj" customClass="ViewController3" customModule="TabBarLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ATP-p6-N3Z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,7 +162,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XXG-aB-2Rw">
                                         <rect key="frame" x="0.0" y="50" width="300" height="241"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_4020" translatesAutoresizingMaskIntoConstraints="NO" id="AP6-V9-x58">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_4020" translatesAutoresizingMaskIntoConstraints="NO" id="AP6-V9-x58">
                                                 <rect key="frame" x="0.0" y="0.0" width="146" height="241"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_4172" translatesAutoresizingMaskIntoConstraints="NO" id="hPC-QJ-3TT">
@@ -183,15 +193,50 @@
                         <viewLayoutGuide key="safeArea" id="LXN-ru-kNG"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Животность" image="Image-3" selectedImage="Image-3" id="BVf-ac-onQ"/>
+                    <connections>
+                        <outlet property="image1" destination="AP6-V9-x58" id="NsU-4h-RVg"/>
+                        <outlet property="image2" destination="hPC-QJ-3TT" id="RsC-GM-X2K"/>
+                        <segue destination="c3a-tw-E5J" kind="show" identifier="3toFull" id="DGb-hF-6je"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5xM-Lt-cSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1761" y="439"/>
         </scene>
+        <!--View Controller31-->
+        <scene sceneID="TJj-YV-1Mj">
+            <objects>
+                <viewController id="c3a-tw-E5J" customClass="ViewController3_1" customModule="TabBarLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HZk-rj-ACl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b63-gk-rdK">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b63-gk-rdK" firstAttribute="leading" secondItem="PbN-w6-fiU" secondAttribute="leading" id="34I-Gn-Wrx"/>
+                            <constraint firstItem="PbN-w6-fiU" firstAttribute="bottom" secondItem="b63-gk-rdK" secondAttribute="bottom" id="4Xe-XK-VKY"/>
+                            <constraint firstItem="PbN-w6-fiU" firstAttribute="trailing" secondItem="b63-gk-rdK" secondAttribute="trailing" id="A9O-rc-hju"/>
+                            <constraint firstItem="b63-gk-rdK" firstAttribute="top" secondItem="PbN-w6-fiU" secondAttribute="top" id="Wt1-bp-D1T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PbN-w6-fiU"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="b63-gk-rdK" id="fX4-6Q-Qwt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yjr-rZ-OI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1459" y="1336"/>
+        </scene>
         <!--Работа-->
         <scene sceneID="qwi-f4-LTa">
             <objects>
-                <viewController id="pqF-iM-fA7" sceneMemberID="viewController">
+                <viewController id="pqF-iM-fA7" customClass="ViewController4" customModule="TabBarLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CrJ-w4-Nbm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,56 +302,70 @@
                         <viewLayoutGuide key="safeArea" id="i0e-hV-5lp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Работа" image="Image-4" selectedImage="Image-4" id="PtY-TZ-qmF"/>
+                    <connections>
+                        <outlet property="image1" destination="hqd-Lr-Cih" id="Vke-rD-KnT"/>
+                        <outlet property="image2" destination="Vjl-Jo-Sus" id="npD-Nr-taH"/>
+                        <outlet property="image3" destination="04P-RQ-yvG" id="VAi-XJ-2Ye"/>
+                        <outlet property="image4" destination="ElF-0W-QEq" id="aAT-C7-cHw"/>
+                        <segue destination="c3a-tw-E5J" kind="show" identifier="4toFull" id="guL-hy-L9Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCS-Hg-wXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2408" y="439"/>
         </scene>
-        <!--Планы-->
+        <!--Контакты-->
         <scene sceneID="vrB-Eu-5rt">
             <objects>
-                <viewController id="YRi-Ek-00B" sceneMemberID="viewController">
+                <viewController id="YRi-Ek-00B" customClass="ViewController5" customModule="TabBarLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9wX-mR-nn5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="M96-bc-Hv4">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6jz-2o-gwE">
                                 <rect key="frame" x="10" y="30" width="300" height="391"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПЛАНЫ И ПЕРСПЕКТИВЫ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryD-HK-BeT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="КОНТАКТЫ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUe-fb-INh">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Vwc-Td-goA"/>
+                                            <constraint firstAttribute="height" constant="50" id="i3B-bg-fUz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fcb42db9-9638-47bf-8ce7-9558ac1d23661x" translatesAutoresizingMaskIntoConstraints="NO" id="P3L-XV-tcp">
-                                        <rect key="frame" x="0.0" y="58" width="300" height="225"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В планах у меня освоить новый язык и среду программирования, стать достойным специалистом и... 8'000'000 зеленью." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXe-1K-R7a">
-                                        <rect key="frame" x="0.0" y="291" width="300" height="100"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bXg-Xj-roy">
+                                        <rect key="frame" x="0.0" y="150.5" width="300" height="110"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="f2H-ti-xso"/>
+                                            <constraint firstAttribute="height" constant="110" id="P2V-so-sgP"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <string key="text">Телефон: +79203885456
+
+e-mail: serebanium@icloud.com
+
+В контакте: m.vk.com/id83726505</string>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fss-Z6-1Cx">
+                                        <rect key="frame" x="0.0" y="361" width="300" height="30"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pdf-xD-m7x" firstAttribute="bottom" secondItem="M96-bc-Hv4" secondAttribute="bottom" constant="10" id="N2W-gM-GJG"/>
-                            <constraint firstItem="M96-bc-Hv4" firstAttribute="top" secondItem="pdf-xD-m7x" secondAttribute="top" constant="10" id="cvb-af-rf4"/>
-                            <constraint firstItem="M96-bc-Hv4" firstAttribute="leading" secondItem="pdf-xD-m7x" secondAttribute="leading" constant="10" id="k7e-rx-YoL"/>
-                            <constraint firstItem="pdf-xD-m7x" firstAttribute="trailing" secondItem="M96-bc-Hv4" secondAttribute="trailing" constant="10" id="rrJ-ca-DWw"/>
+                            <constraint firstItem="6jz-2o-gwE" firstAttribute="leading" secondItem="pdf-xD-m7x" secondAttribute="leading" constant="10" id="RiB-o7-5Cf"/>
+                            <constraint firstItem="pdf-xD-m7x" firstAttribute="trailing" secondItem="6jz-2o-gwE" secondAttribute="trailing" constant="10" id="Z2v-Qw-KMa"/>
+                            <constraint firstItem="pdf-xD-m7x" firstAttribute="bottom" secondItem="6jz-2o-gwE" secondAttribute="bottom" constant="10" id="tua-7q-1KB"/>
+                            <constraint firstItem="6jz-2o-gwE" firstAttribute="top" secondItem="pdf-xD-m7x" secondAttribute="top" constant="10" id="yKL-cd-zqv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pdf-xD-m7x"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Планы" image="Image-5" selectedImage="Image-5" id="Rnm-pZ-WkW"/>
+                    <tabBarItem key="tabBarItem" title="Контакты" image="Image-5" selectedImage="Image-5" id="Rnm-pZ-WkW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNy-JB-8O2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -333,7 +392,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mc9-3k-FDK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="463" y="-380"/>
+            <point key="canvasLocation" x="1761" y="-501"/>
         </scene>
     </scenes>
     <resources>
@@ -348,10 +407,12 @@
         <image name="Image-5" width="22.5" height="22.5"/>
         <image name="bank" width="1024" height="682"/>
         <image name="club" width="162" height="69.599998474121094"/>
-        <image name="fcb42db9-9638-47bf-8ce7-9558ac1d23661x" width="802" height="536"/>
         <image name="gerb" width="174" height="221"/>
         <image name="krash" width="1037.25" height="603"/>
         <image name="work" width="624" height="468.75"/>
         <image name="work2" width="533" height="400"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DGb-hF-6je"/>
+    </inferredMetricsTieBreakers>
 </document>
