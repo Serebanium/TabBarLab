@@ -336,7 +336,8 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bXg-Xj-roy">
                                         <rect key="frame" x="0.0" y="150.5" width="300" height="110"/>
-                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="P2V-so-sgP"/>
                                         </constraints>
@@ -374,7 +375,7 @@ e-mail: serebanium@icloud.com
         <!--Tab Bar Controller-->
         <scene sceneID="AjJ-KL-ev6">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Gal-Qn-kVb" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="Gal-Qn-kVb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="2JY-Ll-Pru">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -413,6 +414,6 @@ e-mail: serebanium@icloud.com
         <image name="work2" width="533" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DGb-hF-6je"/>
+        <segue reference="whj-iY-DRh"/>
     </inferredMetricsTieBreakers>
 </document>
